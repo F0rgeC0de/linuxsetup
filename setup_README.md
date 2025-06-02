@@ -4,6 +4,11 @@
 The goal here is a zero to development setup with no manual setup.
 - This first gen script gets packages based on a list and installs them with nix-env
 
+**To run, place this script in home directory and call from the terminal**
+```bash
+./setupos.sh
+```
+
 
 ## Packages
 
