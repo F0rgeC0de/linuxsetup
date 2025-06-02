@@ -24,7 +24,7 @@ declare -a packages=(
 "neovim" "tree-sitter" "gcc" "unzip" "yarn" "gnumake"
 "lazygit"
 
-"fzf" "stow" "exa" "zoxide" "ripgrep-all" "git" "curl"
+"fzf" "stow" "exa" "zoxide" "ripgrep-all" "git" "gh" "curl"
 "neofetch"
 
 "python3"
