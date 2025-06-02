@@ -110,8 +110,9 @@ fi
 }
 
 
-get_dotfiles
+setup_nix
 get_packages
+get_dotfiles
 load_dotfiles
 set_aliases
 
