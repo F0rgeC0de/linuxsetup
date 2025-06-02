@@ -25,6 +25,7 @@ declare -a packages=(
 "lazygit"
 
 "fzf" "stow" "exa" "zoxide" "ripgrep-all" "git" "curl"
+"neofetch"
 
 "python3"
 
