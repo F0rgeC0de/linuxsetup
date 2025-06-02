@@ -114,6 +114,7 @@ setup_nix
 get_packages
 get_dotfiles
 load_dotfiles
+gh auth login
 set_aliases
 
 
