@@ -81,6 +81,7 @@ done
 set_aliases() {
 
 # exa
+echo "" >> ~/.bashrc
 echo "alias ll='exa -l --icons'" >> ~/.bashrc
 echo "alias ls='exa'" >> ~/.bashrc
 echo "alias tree='exa --tree --level=2 --icons'" >> ~/.bashrc
@@ -93,8 +94,12 @@ echo "alias tree='exa --tree --level=2 --icons'" >> ~/.bashrc
 setup_nix() {
 
 curl -L https://nixos.org/nix/install | sh
+echo "" >> ~/. bashrc
+echo "$HOME/.nix-profile/etc/profile.d/nix.sh" >> ~/. bashrc
 
-. /home/$USER/.nix-profile/etc/profile.d/nix.sh
+. $HOME/.nix-profile/etc/profile.d/nix.sh
+. $HOME/.bashrc
+
 
 ln -s /home/$USER/.nix-profile/share/applications/* /home/$USER/.local/share/applications/
 
