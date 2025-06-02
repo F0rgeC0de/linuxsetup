@@ -54,6 +54,20 @@ fi
 
 load_dotfiles() {
 
+# Directory containing your dotfiles (stow packages)
+DOTFILES_DIR=~/.dotfiles
+
+# List of files you want to backup (for example: .bashrc, .vimrc, etc.)
+FILES_TO_BACKUP=($(ls -A $DOTFILES_DIR))
+
+for file in "${FILES_TO_BACKUP[@]}"; do
+    # Only backup if the file exists in home directory
+    if [ -e "$HOME/$file" ]; then
+        mv "$HOME/$file" "$HOME/stow_backups/$file"
+        echo "Backed up $file to ~/stow_backups/$file"
+    fi
+done
+
 cd ~/.dotfiles
 stow .
 
