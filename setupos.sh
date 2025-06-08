@@ -216,20 +216,6 @@ rm -rf nerd-fonts
 }
 
 
-
-set_aliases() {
-
-# exa
-echo "" >> ~/.bashrc
-echo "alias ll='eza -l --icons'" >> ~/.bashrc
-echo "alias ls='eza'" >> ~/.bashrc
-echo "alias tree='eza --tree --level=2 --icons'" >> ~/.bashrc
-
-
-}
-
-
-
 setup_brew() {
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -259,7 +245,5 @@ setup_brew
 get_brew_packages
 get_dotfiles
 load_dotfiles
-install_fonts
 gh auth login
-set_aliases
-
+install_fonts
