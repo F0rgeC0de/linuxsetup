@@ -212,8 +212,7 @@ done
 
 echo -e "\e[0;32mScript:\e[0m \e[0;34mCleaning the mess...\e[0m"
 cd ../
-rm -rf nerd-fonts```
-
+rm -rf nerd-fonts
 }
 
 
